@@ -1,0 +1,22 @@
+{
+  "name": "boilerplate",
+  "version": "0.0.2",
+  "description": "boilerplate Node/React typescript ready for use",
+  "authors": {
+    "names": "Luca Hermann | Lucien Lacaze",
+    "emails": "lhermann@student.42.fr | llacaze@student.42.fr"
+  },
+  "main": ".prettierrc.js",
+  "scripts": {
+    "dc-build": "docker-compose up --build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/LucaHermann/boilerplate.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/LucaHermann/boilerplate/issues"
+  },
+  "homepage": "https://gitlab.com/LucaHermann/boilerplate#readme"
+}

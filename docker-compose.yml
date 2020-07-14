@@ -1,0 +1,26 @@
+version: "3.7"
+services:
+    server:
+        container_name: awesome_server
+        build:
+            context: ./server
+            dockerfile: Dockerfile
+        image: llacaze/awesome_server
+        ports:
+            - "127.0.0.1:8080:8080"
+        volumes:
+            - ./server:/app
+    client:
+        container_name: awesome_web
+        build:
+            context: ./client
+            dockerfile: Dockerfile
+        image: llacaze/awesome_web
+        ports:
+            - "127.0.0.1:3000:3000"
+        links:
+            - server
+        depends_on:
+            - server
+        volumes:
+            - ./client:/app
